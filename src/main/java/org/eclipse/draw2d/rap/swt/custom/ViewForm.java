@@ -129,11 +129,6 @@ public class ViewForm extends Composite {
    *              <ul>
    *              <li>ERROR_NULL_ARGUMENT - if the parent is null</li>
    *              </ul>
-   * @exception SWTException
-   *              <ul>
-   *              <li>ERROR_THREAD_INVALID_ACCESS - if not called from the
-   *              thread that created the parent</li>
-   *              </ul>
    * @see SWT#BORDER
    * @see SWT#FLAT
    * @see #getStyle()
@@ -303,14 +298,6 @@ public class ViewForm extends Composite {
    * however, the creator of the content must dispose of the content.
    * 
    * @param content the control to be displayed in the content area or null
-   * @exception SWTException
-   *              <ul>
-   *              <li>ERROR_WIDGET_DISPOSED - if the receiver has been disposed</li>
-   *              <li>ERROR_THREAD_INVALID_ACCESS - if not called from the
-   *              thread that created the receiver</li>
-   *              <li>ERROR_INVALID_ARGUMENT - if the control is not a child of
-   *              this ViewForm</li>
-   *              </ul>
    */
   public void setContent( Control content ) {
     checkWidget();
@@ -333,12 +320,6 @@ public class ViewForm extends Composite {
    * </p>
    * 
    * @param layout the receiver's new layout or null
-   * @exception SWTException
-   *              <ul>
-   *              <li>ERROR_WIDGET_DISPOSED - if the receiver has been disposed</li>
-   *              <li>ERROR_THREAD_INVALID_ACCESS - if not called from the
-   *              thread that created the receiver</li>
-   *              </ul>
    */
   public void setLayout( Layout layout ) {
     checkWidget();
@@ -361,14 +342,6 @@ public class ViewForm extends Composite {
    * dispose of the topCenter.
    * 
    * @param topCenter the control to be displayed in the top center or null
-   * @exception SWTException
-   *              <ul>
-   *              <li>ERROR_WIDGET_DISPOSED - if the receiver has been disposed</li>
-   *              <li>ERROR_THREAD_INVALID_ACCESS - if not called from the
-   *              thread that created the receiver</li>
-   *              <li>ERROR_INVALID_ARGUMENT - if the control is not a child of
-   *              this ViewForm</li>
-   *              </ul>
    */
   public void setTopCenter( Control topCenter ) {
     checkWidget();
@@ -390,14 +363,6 @@ public class ViewForm extends Composite {
    * the control must dispose of the control.
    * 
    * @param c the control to be displayed in the top left corner or null
-   * @exception SWTException
-   *              <ul>
-   *              <li>ERROR_WIDGET_DISPOSED - if the receiver has been disposed</li>
-   *              <li>ERROR_THREAD_INVALID_ACCESS - if not called from the
-   *              thread that created the receiver</li>
-   *              <li>ERROR_INVALID_ARGUMENT - if the control is not a child of
-   *              this ViewForm</li>
-   *              </ul>
    */
   public void setTopLeft( Control c ) {
     checkWidget();
@@ -420,14 +385,6 @@ public class ViewForm extends Composite {
    * control.
    * 
    * @param c the control to be displayed in the top right corner or null
-   * @exception SWTException
-   *              <ul>
-   *              <li>ERROR_WIDGET_DISPOSED - if the receiver has been disposed</li>
-   *              <li>ERROR_THREAD_INVALID_ACCESS - if not called from the
-   *              thread that created the receiver</li>
-   *              <li>ERROR_INVALID_ARGUMENT - if the control is not a child of
-   *              this ViewForm</li>
-   *              </ul>
    */
   public void setTopRight( Control c ) {
     checkWidget();
@@ -446,12 +403,6 @@ public class ViewForm extends Composite {
    * Specify whether the border should be displayed or not.
    * 
    * @param show true if the border should be displayed
-   * @exception SWTException
-   *              <ul>
-   *              <li>ERROR_WIDGET_DISPOSED - if the receiver has been disposed</li>
-   *              <li>ERROR_THREAD_INVALID_ACCESS - if not called from the
-   *              thread that created the receiver</li>
-   *              </ul>
    */
   public void setBorderVisible( boolean show ) {
     checkWidget();
@@ -477,12 +428,6 @@ public class ViewForm extends Composite {
    * 
    * @param show true if the topCenter will always appear on a separate line by
    *          itself
-   * @exception SWTException
-   *              <ul>
-   *              <li>ERROR_WIDGET_DISPOSED - if the receiver has been disposed</li>
-   *              <li>ERROR_THREAD_INVALID_ACCESS - if not called from the
-   *              thread that created the receiver</li>
-   *              </ul>
    */
   public void setTopCenterSeparate( boolean show ) {
     checkWidget();

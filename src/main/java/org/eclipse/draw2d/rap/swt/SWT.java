@@ -82,10 +82,10 @@ public class SWT {
    * Style constant to indicate single underline (value is 0).
    * <p>
    * <b>Used By:</b>
+   * </p>
    * <ul>
    * <li><code>TextStyle</code></li>
    * </ul>
-   * </p>
    * 
    * @since 3.4
    */
@@ -95,10 +95,10 @@ public class SWT {
    * Style constant to indicate double underline (value is 1).
    * <p>
    * <b>Used By:</b>
+   * </p>
    * <ul>
    * <li><code>TextStyle</code></li>
    * </ul>
-   * </p>
    * 
    * @since 3.4
    */
@@ -108,10 +108,10 @@ public class SWT {
    * Style constant to indicate error underline (value is 2).
    * <p>
    * <b>Used By:</b>
+   * </p>
    * <ul>
    * <li><code>TextStyle</code></li>
    * </ul>
-   * </p>
    * 
    * @since 3.4
    */
@@ -121,10 +121,10 @@ public class SWT {
    * Style constant to indicate squiggle underline (value is 3).
    * <p>
    * <b>Used By:</b>
+   * </p>
    * <ul>
    * <li><code>TextStyle</code></li>
    * </ul>
-   * </p>
    * 
    * @since 3.4
    */
@@ -142,10 +142,10 @@ public class SWT {
    * </p>
    * <p>
    * <b>Used By:</b>
+   * </p>
    * <ul>
    * <li><code>TextStyle</code></li>
    * </ul>
-   * </p>
    * 
    * @since 3.5
    */
@@ -155,10 +155,10 @@ public class SWT {
    * Style constant to indicate solid border (value is 1).
    * <p>
    * <b>Used By:</b>
+   * </p>
    * <ul>
    * <li><code>TextStyle</code></li>
    * </ul>
-   * </p>
    * 
    * @since 3.4
    */
@@ -168,10 +168,10 @@ public class SWT {
    * Style constant to indicate dashed border (value is 2).
    * <p>
    * <b>Used By:</b>
+   * </p>
    * <ul>
    * <li><code>TextStyle</code></li>
    * </ul>
-   * </p>
    * 
    * @since 3.4
    */
@@ -181,10 +181,10 @@ public class SWT {
    * Style constant to indicate dotted border (value is 4).
    * <p>
    * <b>Used By:</b>
+   * </p>
    * <ul>
    * <li><code>TextStyle</code></li>
    * </ul>
-   * </p>
    * 
    * @since 3.4
    */
@@ -266,10 +266,10 @@ public class SWT {
    * Constants to indicate line scrolling (value is 1).
    * <p>
    * <b>Used By:</b>
+   * </p>
    * <ul>
    * <li><code>Control</code></li>
    * </ul>
-   * </p>
    * 
    * @since 3.1
    */
@@ -279,10 +279,10 @@ public class SWT {
    * Constants to indicate page scrolling (value is 2).
    * <p>
    * <b>Used By:</b>
+   * </p>
    * <ul>
    * <li><code>Control</code></li>
    * </ul>
-   * </p>
    * 
    * @since 3.1
    */

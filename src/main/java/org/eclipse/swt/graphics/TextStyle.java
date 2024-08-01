@@ -78,12 +78,6 @@ public class TextStyle {
 	 * or <code>SWT.UNDERLINE_SQUIGGLE</code>.
 	 * </p>
 	 * 
-	 * @see SWT#UNDERLINE_SINGLE
-	 * @see SWT#UNDERLINE_DOUBLE 
-	 * @see SWT#UNDERLINE_ERROR
-	 * @see SWT#UNDERLINE_SQUIGGLE
-	 * @see SWT#UNDERLINE_LINK
-	 * 
 	 * @since 3.4
 	 */	
 	public int underlineStyle;
@@ -110,9 +104,6 @@ public class TextStyle {
 	 * <code>SWT.NONE</code>.
 	 * </p>
 	 * 
-	 * @see SWT#BORDER_SOLID
-	 * @see SWT#BORDER_DASH 
-	 * @see SWT#BORDER_DOT
 	 * @see SWT#NONE
 	 * 
 	 * @since 3.4

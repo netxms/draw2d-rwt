@@ -13,7 +13,8 @@ package org.eclipse.draw2d;
 /**
  * Constants representing cardinal directions and relative positions. Some of
  * these constants can be grouped as follows:
- * <TABLE border="1" cellpadding="5" cellspacing="0">
+ * <TABLE border="1">
+ * <caption>Constants</caption>
  * <TBODY>
  * <TR>
  * <TD>LEFT, CENTER, RIGHT</TD>

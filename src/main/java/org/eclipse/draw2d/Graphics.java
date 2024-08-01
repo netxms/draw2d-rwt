@@ -775,7 +775,6 @@ public abstract class Graphics {
 	/**
 	 * Returns the interpolation setting.
 	 * 
-	 * @see org.eclipse.swt.graphics.GC#getInterpolation()
 	 * @return the interpolation setting
 	 * @since 3.1
 	 */

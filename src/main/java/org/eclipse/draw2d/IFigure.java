@@ -35,7 +35,7 @@ public interface IFigure {
 
 	/**
 	 * Insets that are all 0. Always returns
-	 * <code>true<code> for {@link #isEmpty()}.
+	 * <code>true</code> for {@link #isEmpty()}.
 	 */
 	class NoInsets extends Insets {
 		NoInsets() {

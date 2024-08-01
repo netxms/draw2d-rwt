@@ -307,17 +307,17 @@ public Rectangle getClientArea() {
  * printer device is unable to print.  This margin is known as the "trim."
  * This method can be used to calculate the printer's minimum margins
  * by passing in a client area of 0, 0, 0, 0 and then using the resulting
- * x and y coordinates (which will be <= 0) to determine the minimum margins
+ * x and y coordinates (which will be &lt;= 0) to determine the minimum margins
  * for the top and left edges of the paper, and the resulting width and height
  * (offset by the resulting x and y) to determine the minimum margins for the
  * bottom and right edges of the paper, as follows:
+ * </p>
  * <ul>
  * 		<li>The left trim width is -x pixels</li>
  * 		<li>The top trim height is -y pixels</li>
  * 		<li>The right trim width is (x + width) pixels</li>
  * 		<li>The bottom trim height is (y + height) pixels</li>
  * </ul>
- * </p>
  * 
  * @param x the x coordinate of the client area
  * @param y the y coordinate of the client area

@@ -105,8 +105,6 @@ public class PrinterGraphics extends ScaledGraphics {
 
 	/**
 	 * Overridden to translate dashes to printer specific values.
-	 * 
-	 * @see org.eclipse.draw2d.ScaledGraphics#setLineAttributes(org.eclipse.swt.graphics.LineAttributes)
 	 */
 	public void setLineAttributes(LineAttributes attributes) {
 		 if (attributes.style == org.eclipse.draw2d.rap.swt.SWT.LINE_CUSTOM && attributes.dash != null

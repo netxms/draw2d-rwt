@@ -23,8 +23,6 @@ import org.eclipse.swt.*;
  * required, and thus no <code>dispose()</code> method is provided.
  * </p>
  *
- * @see GC#getLineAttributes()
- * @see GC#setLineAttributes(LineAttributes)
  * @see <a href="http://www.eclipse.org/swt/">Sample code and further information</a>
  *
  * @since 1.3

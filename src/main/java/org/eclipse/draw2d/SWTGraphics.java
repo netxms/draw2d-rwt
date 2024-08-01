@@ -1110,7 +1110,7 @@ public class SWTGraphics extends Graphics {
 
 	/**
 	 * Simple implementation of clipping a Path within the context of current
-	 * clipping rectangle for now (not region) <li>Note that this method wipes
+	 * clipping rectangle for now (not region). Note that this method wipes
 	 * out the clipping rectangle area, hence if clients need to reset it call
 	 * {@link #restoreState()}
 	 * 

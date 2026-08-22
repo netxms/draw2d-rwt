@@ -161,6 +161,27 @@ public class LightweightSystem {
 	}
 
 	/**
+	 * Notifies canvas listeners with synthetic mouse up event for left mouse button at given location.
+	 * Used to complete drag operation abandoned by drag tracker, because otherwise figures will keep
+	 * drag state until next real mouse up event.
+	 *
+	 * @param location
+	 *            last known mouse location in canvas coordinates (can be <code>null</code>)
+	 */
+	private void notifyMouseUp(Point location) {
+		Event event = new Event();
+		event.display = canvas.getDisplay();
+		event.type = SWT.MouseUp;
+		event.widget = canvas;
+		event.button = 1;
+		if (location != null) {
+			event.x = location.x;
+			event.y = location.y;
+		}
+		canvas.notifyListeners(SWT.MouseUp, event);
+	}
+
+	/**
 	 * Returns this LightwightSystem's EventDispatcher.
 	 * 
 	 * @return the event dispatcher
@@ -385,6 +406,7 @@ public class LightweightSystem {
 		public boolean tracking;
 		private final MouseMoveListener listener;
 		private final Widget widget;
+		private Point lastLocation;
 
 		public RAPDragTracker(final MouseMoveListener listener,
 				final Widget widget) {
@@ -417,6 +439,7 @@ public class LightweightSystem {
 										ev.display = display;
 										Point loc = canvas.toControl(
 												display.getCursorLocation());
+										lastLocation = loc;
 										ev.type = SWT.DragDetect;
 										ev.widget = widget;
 										ev.button = 1;
@@ -441,6 +464,12 @@ public class LightweightSystem {
 						display.syncExec(new Runnable() {
 							public void run() {
 								close();
+								// Tracker gives up on drag operation that takes too long or when mouse
+								// button was released without mouse up event being delivered to the page.
+								// Complete such drag operation with synthetic mouse up event.
+								if (cancelled && !canvas.isDisposed()) {
+									notifyMouseUp(lastLocation);
+								}
 							}
 						});
 					}
